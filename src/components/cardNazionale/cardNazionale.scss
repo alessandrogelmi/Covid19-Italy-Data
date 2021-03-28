@@ -1,0 +1,24 @@
+@import "~bootstrap/scss/bootstrap";
+
+#cardHead {
+    background: #343a40;
+    color: white;
+}
+
+#cardHead, #cardFoot {
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+
+nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #343a40;
+}
+
+.nav-link {
+    color:black;
+}
+
+.nav-link:hover {
+    color: #343a40;
+}

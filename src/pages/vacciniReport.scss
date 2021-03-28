@@ -1,0 +1,29 @@
+@import "~bootstrap/scss/bootstrap";
+
+
+.headerVaccini {
+    background-color: #343A40;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    color: white;
+    font-size: 3rem;
+}
+
+#cardHead {
+    background: #343a40;
+    color: white;
+}
+
+#cardHead, #cardFoot {
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+
+#fioreVacc {
+    max-width: 100%;
+}

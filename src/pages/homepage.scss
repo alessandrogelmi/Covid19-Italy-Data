@@ -1,0 +1,40 @@
+@import "~bootstrap/scss/bootstrap";
+
+#cont {
+    padding: 25px;
+}
+
+#datiCovidItalia {
+    margin-top: 20px;
+}
+
+.doubleCard {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.cRegione {
+    width: 50%;
+    margin-right: 10px;
+}
+
+div.cProvince {
+    width: 50%;
+}
+
+.grafici {
+    max-width: 100%;
+    max-height: 450px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: rgb(52, 58, 64);
+}
+
+.cardReport {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

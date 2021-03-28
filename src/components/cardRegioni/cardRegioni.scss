@@ -1,0 +1,12 @@
+@import "~bootstrap/scss/bootstrap";
+
+#cardHead {
+    background: #343a40;
+    color: white;
+}
+
+#cardHead, #cardFoot {
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}

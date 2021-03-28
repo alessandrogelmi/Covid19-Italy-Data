@@ -1,0 +1,31 @@
+.scrollMapp {
+    font-size: 1rem;
+    padding: 8px;
+    color: white;
+}
+
+.scrollMapp:hover {
+    color: hsla(0,0%,100%,.5);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar .navbar-nav {
+    justify-content: center;
+  }
+  
+  .navbar .navbar-collapse {
+    text-align: center;
+
+  }
+
+
+  @media screen and (max-width: 576px){
+    .textBrand {
+        display: none;
+    }
+}
+
+.navbar-expand-md {
+    width: 100%;
+}

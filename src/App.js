@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     ReactGa.initialize('UA-193165358-1')
-    ReactGa.pageview('/')
+    ReactGa.pageview(window.location.pathname + window.location.search)
   })
 
   return (

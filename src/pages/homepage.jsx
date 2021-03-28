@@ -9,6 +9,7 @@ import CardMondo from "../components/cardMondo/cardMondo";
 import BarChartPositivi from "../components/graficoPositivi/LineChartPositivi";
 import StackedGroup from "../components/graficoOspedali/StackedGroupOspedali";
 import LineChartVariazione from "../components/graficoVariazionePositivi/LineChartVariazione";
+import CardVaccini from '../components/cardVaccini/cardVaccini';
 
 import Moment from "moment";
 
@@ -88,6 +89,9 @@ export default class Homepage extends Component {
           <br />
           <hr />
           <br />
+          <CardVaccini />
+          <br />
+          <hr />
         </Container>
 
         <div id="mappaCovid">

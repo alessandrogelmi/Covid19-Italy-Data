@@ -9,7 +9,7 @@ import LogoVaccini from '../../images/vacc.png'
 export default function CardVaccini() {
   return (
     <div>
-      <Card className="cardVacc">
+      <Card id="cardVacc">
         <div className="imageCard">
             <Card.Img variant="top" style={{maxWidth: "120px",}} src={LogoVaccini} />
         </div>

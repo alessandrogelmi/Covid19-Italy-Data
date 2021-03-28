@@ -3,6 +3,7 @@ import React from "react";
 import "./header2.scss";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import ScrollToTop from '../functionScrollto0'
 
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -33,6 +34,7 @@ export default function Header2(props) {
   return (
     <React.Fragment>
       <Router>
+        <ScrollToTop />
         <CssBaseline />
         <HideOnScroll {...props}>
           <AppBar style={{ background: "#343A40" }}>

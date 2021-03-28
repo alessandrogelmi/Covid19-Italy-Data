@@ -6,7 +6,7 @@ import ReactGa from 'react-ga';
 function App() {
 
   useEffect(() => {
-    ReactGa.initialize('G-49SEEGFR24')
+    ReactGa.initialize('UA-193165358-1')
     ReactGa.pageview('/')
   })
 

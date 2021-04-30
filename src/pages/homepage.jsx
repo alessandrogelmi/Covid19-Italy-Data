@@ -90,19 +90,7 @@ export default class Homepage extends Component {
           <hr />
           <br />
           <CardVaccini />
-          <br />
-          <hr />
         </Container>
-
-        <div id="mappaCovid">
-          <iframe
-            title="Mappa"
-            width="100%"
-            height="550px"
-            src="https://app.developer.here.com/coronavirus/"
-            frameborder="0"
-          ></iframe>
-        </div>
       </div>
     );
   }

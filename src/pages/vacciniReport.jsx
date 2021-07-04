@@ -10,7 +10,7 @@ import Col from "react-bootstrap/Col";
 
 import FioreVaccino from "../images/fiorevacc.png";
 
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles";
 import VacciniFasciaEta from "../components/vacciniFasciaEta/vacciniFasciaEta";
 import VacciniSesso from "../components/vacciniPerSesso/vacciniSesso";
 import TabellaRegioni from "../components/tabellaRegioni/tabellaRegioni";
@@ -79,27 +79,66 @@ export default class VacciniReport extends Component {
       <div style={{ paddingBottom: "25px" }}>
         <div className="headerVaccini">
           <h1 className="title">Report Vaccini Anti COVID-19</h1>
-          <Particles
-            params={{
-              particles: {
-                number: {
-                  value: 50,
+          <Particles 
+          id="tsparticles" 
+          options={{
+            fps_limit: 100,
+            interactivity:{
+              detectsOn: "canvas",
+              events:{
+                onHover:{
+                  enable: true,
+                  mode: "grab"
                 },
-                size: {
-                  value: 3,
-                },
+                resize: false,
               },
-              interactivity: {
-                events: {
-                  onhover: {
-                    enable: true,
-                    mode: "repulse",
-                  },
-                },
+              modes:{
+                grab: {
+                  distance: 200,
+                  duration: 0.4
+                }
+              }
+            },
+            particles:{
+              color:{
+                value: "#ffffff"
               },
-            }}
-            height={250}
-          />
+              links:{
+                color:"#ffffff",
+                distance: 200,
+                enable: true,
+                opacity: 0.5,
+                width: 1,
+              },
+              move:{
+                bounce: false,
+                direction: "none",
+                enable: true,
+                outMode: "out",
+                random: false,
+                speed: 2,
+                straight: false
+              },
+              number:{
+                density:{
+                  enable: true,
+                  area: 800
+                },
+                value: 80
+              },
+              opacity:{
+                value: 0.5
+              },
+              shape:{
+                type: "circle"
+              },
+              size:{
+                random: true,
+                value:5
+              }
+            },
+            detectRetina: true
+          }} />
         </div>
 
         <Container>

@@ -86,36 +86,17 @@ export default class VacciniReport extends Component {
                   value: 50,
                 },
                 size: {
-                  value: 6,
+                  value: 3,
                 },
               },
               interactivity: {
                 events: {
                   onhover: {
                     enable: true,
-                    mode: "grab",
-                  },
-                  onClick: {
-                    enable: true,
-                    mode: 'bubble',
+                    mode: "repulse",
                   },
                 },
-                modes: {
-                  grab: {
-                      distance: 400,
-                      line_linked: {
-                        opacity: 1
-                      }
-                  },
-                  bubble: {
-                      distance: 400,
-                      size: 20,
-                      duration: 0.2,
-                      opacity: 0.8,
-                      speed: 10
-                  }
               },
-            }
             }}
             height={250}
           />

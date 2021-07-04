@@ -177,12 +177,12 @@ export default class VacciniReport extends Component {
             <br />
             <hr />
             <br />
-            <h3>Vaccinazioni per categoria</h3>
+            {/* <h3>Vaccinazioni per categoria</h3>
             <br />
             <CiambellaCategorie />
             <br />
             <hr />
-            <br />
+            <br /> */}
             <h3>Numeri vaccini per regione</h3>
             <TabellaRegioni />
           </div>

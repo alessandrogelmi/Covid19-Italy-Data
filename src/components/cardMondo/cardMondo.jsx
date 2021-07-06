@@ -55,7 +55,7 @@ export default class CardMondo extends React.Component {
               <Card
                 style={{
                   width: "18rem",
-                  borderBottom: "15px solid rgba(0,0,255,0.5)",
+                  borderBottom: "15px solid rgba(0,0,255,0.65)",
                   borderLeft: "none",
                   borderTop: "none",
                   borderRight: "none",
@@ -75,7 +75,7 @@ export default class CardMondo extends React.Component {
               <Card
                 style={{
                   width: "18rem",
-                  borderBottom: "15px solid rgba(0,255,0,0.5)",
+                  borderBottom: "15px solid rgba(0,255,0,0.65)",
                   borderLeft: "none",
                   borderTop: "none",
                   borderRight: "none",
@@ -95,7 +95,7 @@ export default class CardMondo extends React.Component {
               <Card
                 style={{
                   width: "18rem",
-                  borderBottom: "15px solid rgba(255,0,0,0.5)",
+                  borderBottom: "15px solid rgba(255,0,0,0.65)",
                   borderLeft: "none",
                   borderTop: "none",
                   borderRight: "none",

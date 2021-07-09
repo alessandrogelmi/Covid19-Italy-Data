@@ -10,5 +10,5 @@ Tutti i dati sono forniti dal repository ufficiale della Presidenza del Consigli
 
 I dati sui vaccini sono forniti ufficialmente dalla community Developers Italia
 
-Dati covid Italia: https://github.com/pcm-dpc/COVID-19
+Dati covid Italia: https://github.com/pcm-dpc/COVID-19  
 Opendata vaccini: https://github.com/italia/covid19-opendata-vaccini/

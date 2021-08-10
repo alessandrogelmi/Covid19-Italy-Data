@@ -14,7 +14,6 @@ import Particles from "react-tsparticles";
 import VacciniFasciaEta from "../components/vacciniFasciaEta/vacciniFasciaEta";
 import VacciniSesso from "../components/vacciniPerSesso/vacciniSesso";
 import TabellaRegioni from "../components/tabellaRegioni/tabellaRegioni";
-import CiambellaCategorie from "../components/graficoCiambellaCategorie/ciambellaCategorie";
 
 export default class VacciniReport extends Component {
   constructor(props) {

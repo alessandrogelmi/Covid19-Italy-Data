@@ -24,6 +24,7 @@ export default class VacciniReport extends Component {
       seconda_dose_totale: 0,
       totale_somministrazioni: 0,
       dataFormattata: "",
+      popolazione: 54009327,
     };
   }
 
@@ -174,6 +175,9 @@ export default class VacciniReport extends Component {
                     <p>
                       Totale vaccinati (prima e seconda dose):{" "}
                       <b>{this.formatNumber(this.state.seconda_dose_totale)}</b>
+                    </p>
+                    <p>
+                      Il <b>{((this.state.seconda_dose_totale/this.state.popolazione)*100).toFixed(2)}%</b> della popolazione (over 12) ha completato il ciclo vaccinale
                     </p>
                   </Col>
                 </Row>

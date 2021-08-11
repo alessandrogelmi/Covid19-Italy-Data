@@ -12,19 +12,25 @@ export default class CardMondo extends React.Component {
       casi: 0,
       decessi: 0,
       guariti: 0,
+      casi_oggi: 0,
+      decessi_oggi: 0,
+      guariti_oggi: 0,
     };
   }
 
   componentDidMount() {
-    fetch("https://covid19.mathdro.id/api")
+    fetch("https://corona.lmao.ninja/v2/all")
       .then((res) => res.json())
       .then((body) => {
         this.setState((prevState) => {
           return {
             ...prevState,
-            casi: body.confirmed.value,
-            decessi: body.deaths.value,
-            guariti: body.recovered.value,
+            casi: body.cases,
+            decessi: body.deaths,
+            guariti: body.recovered,
+            casi_oggi: body.todayCases,
+            decessi_oggi: body.todayDeaths,
+            guariti_oggi: body.todayRecovered,
           };
         });
       });
@@ -64,7 +70,8 @@ export default class CardMondo extends React.Component {
                 <Card.Body>
                   <Card.Title>Casi</Card.Title>
                   <Card.Subtitle className="mb-2">
-                    <b>{this.formatNumber(this.state.casi)}*</b>
+                    <b>{this.formatNumber(this.state.casi)}*</b><br/>
+                    <b>(+{this.formatNumber(this.state.casi_oggi)})</b>
                   </Card.Subtitle>
                   <Card.Text>Totale casi positivi nel mondo</Card.Text>
                 </Card.Body>
@@ -84,7 +91,8 @@ export default class CardMondo extends React.Component {
                 <Card.Body>
                   <Card.Title>Guariti</Card.Title>
                   <Card.Subtitle className="mb-2">
-                    <b>{this.formatNumber(this.state.guariti)}*</b>
+                    <b>{this.formatNumber(this.state.guariti)}*</b><br/>
+                    <b>(+{this.formatNumber(this.state.guariti_oggi)})</b>
                   </Card.Subtitle>
                   <Card.Text>Totale guariti nel mondo</Card.Text>
                 </Card.Body>
@@ -104,7 +112,8 @@ export default class CardMondo extends React.Component {
                 <Card.Body>
                   <Card.Title>Decessi</Card.Title>
                   <Card.Subtitle className="mb-2">
-                    <b>{this.formatNumber(this.state.decessi)}*</b>
+                    <b>{this.formatNumber(this.state.decessi)}*</b><br/>
+                    <b>(+{this.formatNumber(this.state.decessi_oggi)})</b>
                   </Card.Subtitle>
                   <Card.Text>Totale decessi nel mondo</Card.Text>
                 </Card.Body>

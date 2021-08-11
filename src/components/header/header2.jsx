@@ -14,7 +14,7 @@ import Slide from "@material-ui/core/Slide";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
-import Favicon from "../../images/favicon.png";
+import Favicon from "../../images/favicon.webp";
 import Homepage from "../../pages/homepage";
 import VacciniReport from "../../pages/vacciniReport";
 import NotFound from "../../pages/notfound";

@@ -4,7 +4,7 @@ import './cardVaccini.scss'
 import Card from 'react-bootstrap/Card'
 import { Link } from "react-router-dom";
 
-import LogoVaccini from '../../images/vacc.png'
+import LogoVaccini from '../../images/coccarda.svg'
 
 export default function CardVaccini() {
   return (

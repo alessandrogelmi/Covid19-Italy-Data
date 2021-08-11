@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import imgCovid from "../../images/introCovid.png";
+import imgCovid from "../../images/introCovid.webp";
 
 export default class IntroCard extends React.Component {
   render() {

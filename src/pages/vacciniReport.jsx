@@ -8,7 +8,7 @@ import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import FioreVaccino from "../images/fiorevacc.png";
+import FioreVaccino from "../images/coccarda.svg";
 
 import Particles from "react-tsparticles";
 import VacciniFasciaEta from "../components/vacciniFasciaEta/vacciniFasciaEta";

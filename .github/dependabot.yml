@@ -7,3 +7,6 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    ignore:
+      - dependency-name: "bootstrap"
+      - dependency-name: "react-bootstrap"
